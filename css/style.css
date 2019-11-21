@@ -1,44 +1,79 @@
-#gradient {
-    z-index: -1;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    width: 100vw;
-    height: 100vh;
-    color: #fff;
-    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-    background-size: 400% 400%;
-    animation: Gradient 15s ease infinite;
+body{
+    background-color:#f2f2f2;
 }
 
-@keyframes Gradient {
-    0% {
-        background-position: 0% 50%
-    }
-    50% {
-        background-position: 100% 50%
-    }
-    100% {
-        background-position: 0% 50%
-    }
-}
-
-
-
-.nav{
-    background-color:black;
-    font-family: 'Yeon Sung', cursive;
-    font-size: 30px;
-}
-
-#jumbotron{
-    background-color: #33334d;
-}
-
-#jumbotron-h1{
-    font-family: 'Yeon Sung', cursive;
-    font-size: 45px;
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    margin: -75px 0 0 -75px;
+    border: 16px solid #d9d9d9;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Adds the fading affect to the button that the displays to enter the site*/
+  .animate-bottom {
+    padding-top: 320px;
+    position: center;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 5s;
+    animation-name: animatebottom;
+    animation-duration: 5s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+  
+  #loading {
+    display: none;
     text-align: center;
-    color: #00ff00;
-    padding-top: 40px;
+  }
+
+  /* css for the button on the loading page, margin to get it to allign with the loading icon*/
+#enter-button{
+    background-color: #f2f2f2;
+    margin-right: 25px;
+    font-size: 20px;
+}
+
+#enter-button:hover{
+    background-color: #cccccc;
+    transition-duration: 1s;
+}
+
+
+
+
+
+.jumbotron{
+    background-color: transparent;
+}
+
+#rec{
+    padding-top: 150px;
 }
