@@ -54,6 +54,9 @@ body{
     text-align: center;
   }
 
+
+
+  
   /* css for the button on the loading page, margin to get it to allign with the loading icon*/
 #enter-button{
     background-color: #f2f2f2;
@@ -67,13 +70,47 @@ body{
 }
 
 
-
-
-
-.jumbotron{
-    background-color: transparent;
+/* css for loading the landing page progressivly */
+#progressive-loading{
+  animation-name: load;
+  animation-duration: 5000ms;
+  animation-fill-mode: forwards;
 }
 
-#rec{
-    padding-top: 150px;
+  @keyframes load{
+    from { opacity: 0 }
+      to { opacity: 1 }
 }
+
+
+
+/* margin removed to allign the nav elliments correctly on the landing page*/
+#intro-container{
+    margin: 0px;
+}
+
+
+/* navbar */
+
+#navbar{
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+
+#landing-main{
+    margin-top: 30px;
+    font-size: 26px;
+    color: #2f2f38;
+
+}
+
+
+#explain{
+  margin-top: 100px;
+  color: #2f2f38;
+}
+
+
+/* styles in the contact page with the email submission form */
+
