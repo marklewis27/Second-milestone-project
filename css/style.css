@@ -98,6 +98,8 @@ body{
 }
 
 
+
+/* Style for the landing page content when the page loads */
 #landing-main{
     margin-top: 30px;
     font-size: 26px;
@@ -107,9 +109,46 @@ body{
 
 
 #explain{
+  margin-bottom: 100px;
   margin-top: 100px;
-  color: #2f2f38;
 }
+
+#explain-2{
+  margin-bottom: 95px;
+}
+
+
+#scroll-screen-main{
+  height: 762px;
+}
+
+#scroll-screen-1{
+  height: 254px;
+  background-color: #6666ff;
+}
+
+#scroll-screen-2{
+  height: 254px;
+}
+
+#scroll-screen-3{
+  height: 254px;
+}
+
+#scroll-screen-4{
+  height: 254px;
+  background-color: #6666ff;
+}
+
+#scroll-screen-5{
+  height: 254px;
+  background-color: #6666ff;
+}
+
+#scroll-screen-6{
+  height: 254px;
+}
+
 
 
 /* styles in the contact page with the email submission form */
