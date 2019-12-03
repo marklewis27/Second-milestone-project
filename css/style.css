@@ -149,6 +149,13 @@ body{
   height: 254px;
 }
 
+/* javascript styles that come in with the use of the click function, otherwise remain unused */
+
+.list-change{
+  color: yellow;
+  font-size: 18px;
+  font-style: italic;
+}
 
 
 /* styles in the contact page with the email submission form */
