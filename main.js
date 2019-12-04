@@ -1,3 +1,4 @@
+/*These are the variables that assign where the funtion is working in the page by using the query selctor */
 const textColor = document.querySelectorAll('#scroll-screen-1')
 const listColor = document.querySelectorAll('#example-list li')
 
@@ -13,7 +14,7 @@ function myFunction() {
     document.getElementById("loading").style.display = "block";
   }
 
-
+/* This is the for loop that is changing the plain text in to larger yellow writing with the click property*/
   for (text of textColor){
     text.addEventListener("click", function() {
       this.style.color = "Yellow";
@@ -21,10 +22,19 @@ function myFunction() {
     });
   }
 
-
+  /* The for loop that lopps through the list items and adds the css properties when clicked on,
+  and then returns the list item to default with a second click*/
   for (list of listColor){
     list.addEventListener('click', function(){
       this.classList.toggle('list-change');
     });
   }
 
+  /* The on and off funtions for the overlay affect being swtiched on and off again*/
+  function on() {
+    document.querySelector("#overlay").style.display = "block";
+  }
+  
+  function off() {
+    document.querySelector("#overlay").style.display = "none";
+  }
