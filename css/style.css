@@ -150,6 +150,8 @@ body{
   height: 254px;
 }
 
+
+
 /* javascript styles that come in with the use of the click function, otherwise remain unused */
 
 .list-change{
@@ -191,20 +193,13 @@ body{
 
 /* Styles for the second page scrolled down with the javascript examples on it */
 
-#scroll-screen-main-2{
+#second-display{
   height: 762px;
 }
 
-#second-scroll-1{
-  height: 381px;
-  background-color: lightskyblue;
+#displayed-message{
+  padding-top: 10px;
 }
-
-#second-scroll-2{
-  height: 381px;
-  background-color: lightgreen;
-}
-
 
 /* styles in the contact page with the email submission form */
 

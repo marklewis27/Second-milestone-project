@@ -38,3 +38,25 @@ function myFunction() {
   function off() {
     document.querySelector("#overlay").style.display = "none";
   }
+
+
+function numberFunction(){
+
+let message;
+let number = document.getElementById("user-input").value;
+
+if (number <= 10 ) {
+  message = ("low number");
+}
+else if (number >=11 && number < 50) {
+  message = ('medium number');
+}
+else if (number >= 50 && number <= 100) {
+  message = ('high number');
+}
+else {
+  message = ('To high of a number for me!')
+}
+ 
+document.getElementById("displayed-message").innerHTML = message;
+}
