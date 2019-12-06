@@ -40,6 +40,9 @@ function myFunction() {
   }
 
 
+
+  /* This is the function that uses an if else statment based on the users input of a number value to 
+  display one of several messages back to the user on the screen  */
 function numberFunction(){
 
 let message;
