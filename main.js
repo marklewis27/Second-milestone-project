@@ -48,8 +48,12 @@ function numberFunction(){
 let message;
 let number = document.getElementById("user-input").value;
 
-if (number <= 10 ) {
-  message = ("low number");
+
+if (isNaN(number)) {
+  message = (number + " " + "Hang on ... That doesn't look like a number to me!");
+}
+else if (number  < 10 ) {
+  message = ("low Number");
 }
 else if (number >=11 && number < 50) {
   message = ('medium number');

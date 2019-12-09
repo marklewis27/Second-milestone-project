@@ -194,12 +194,38 @@ body{
 /* Styles for the second page scrolled down with the javascript examples on it */
 
 #second-display{
-  height: 762px;
+  height: 381px;
+  background-color: lightgreen;
 }
+
 
 #displayed-message{
   padding-top: 10px;
 }
+
+
+#third-display{
+  height: 381px;
+  background-color: lightgrey;
+}
+
+/* background animation in the lower div, testing for adam */
+
+#background-animation{
+  height: 762px;
+  animation-name: adam;
+  animation-iteration-count: infinite;
+  animation-duration: 20s;
+} 
+
+@keyframes adam {
+  0%   {background-color: red;}
+  10%  {background-color: yellow;}
+  20%  {background-color: orange}
+  75%  {background-color: pink}
+  100% {background-color: red;}
+}
+
 
 /* styles in the contact page with the email submission form */
 
