@@ -40,6 +40,30 @@ function myFunction() {
   }
 
 
+  /* functions for the smooth moving down to certain secion of the page */
+
+  const li = document.getElementById('scrollSouthend');
+
+  li.addEventListener('click', () => window.scrollTo({
+    top: 762,
+    behavior: 'smooth',
+  }));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   /* This is the function that uses an if else statment based on the users input of a number value to 
   display one of several messages back to the user on the screen  */
