@@ -72,6 +72,11 @@ body{
 
 
 /* css for loading the landing page progressivly */
+#background{
+background-image: url(../images/racingedit.png);
+background-repeat: no-repeat;
+}
+
 #progressive-loading{
   animation-name: load;
   animation-duration: 5000ms;
@@ -99,24 +104,74 @@ body{
 }
 
 
-
 /* Style for the landing page content when the page loads */
 #landing-main{
+    font-family: 'Nixie One';
     margin-top: 30px;
-    font-size: 26px;
-    color: #2f2f38;
+    font-size: 100px;
+    line-height: 120px;
+    letter-spacing: 0px;
+    color: #B3103B;
+}
 
+#landing-national{
+  font-family: 'Nixie One';
+  font-size: 60px;
+  line-height: 70px;
+  letter-spacing: 0px;
+  color: #B3103B ;
 }
 
 
 #explain{
+  font-family: 'Libre Baskerville';
+  font-size: 30px;
+  letter-spacing: 0px;
+  line-height: 40px;
   margin-bottom: 100px;
   margin-top: 100px;
+  color: #FF4A7A;
 }
 
 #explain-2{
-  margin-bottom: 95px;
+  font-family: 'Libre Baskerville';
+  font-size: 28px;
+  letter-spacing: 0px;
+  line-height: 36px;
+  padding-bottom: 60px;
+  color: #FF4A7A;
 }
+
+
+#track-description{
+    font-family: 'Libre Baskerville';
+    font-size: 20px;
+    letter-spacing: 0px;
+    line-height: 26px;
+    color: #FF4A7A;
+}
+/* Regional page css */
+
+#southend{
+  background-image: url(../images/sounthend.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#track-bullet-points{
+  font-family: 'Libre Baskerville';
+  font-size: 16px;
+  letter-spacing: 0px;
+  color: #FF4A7A;
+}
+
+
+
+
+
+
+
+
 
 
 #scroll-screen-main{
@@ -204,10 +259,7 @@ body{
 }
 
 
-#third-display{
-  height: 381px;
-  background-color: lightgrey;
-}
+
 
 /* background animation in the lower div, testing for adam */
 
@@ -215,7 +267,7 @@ body{
   height: 762px;
   animation-name: adam;
   animation-iteration-count: infinite;
-  animation-duration: 20s;
+  animation-duration: 15s;
 } 
 
 @keyframes adam {
@@ -224,6 +276,18 @@ body{
   20%  {background-color: orange}
   75%  {background-color: pink}
   100% {background-color: red;}
+}
+
+
+#trial-1{
+  background-color: lightblue;
+  height: 381px;
+}
+
+
+#trial-2{
+  background-color: lightyellow;
+  height: 381px;
 }
 
 
