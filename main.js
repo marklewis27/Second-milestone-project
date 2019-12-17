@@ -42,10 +42,24 @@ function myFunction() {
 
   /* functions for the smooth moving down to certain secion of the page */
 
-  const li = document.getElementById('scrollSouthend');
+  const scroll1 = document.getElementById('scrollSouthend');
 
-  li.addEventListener('click', () => window.scrollTo({
-    top: 762,
+  scroll1.addEventListener('click', () => window.scrollTo({
+    top: 810,
+    behavior: 'smooth',
+  }));
+
+  const scroll2 = document.getElementById('scrollHNMC');
+
+  scroll2.addEventListener('click', () => window.scrollTo({
+    top: 1610,
+    behavior: 'smooth',
+  }));
+
+  const scroll3 = document.getElementById('scrollBoughton');
+
+  scroll3.addEventListener('click', () => window.scrollTo({
+    top: 2386,
     behavior: 'smooth',
   }));
 
