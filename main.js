@@ -21,6 +21,28 @@ function myFunction() {
     });
   }
 
+/* functions for the smooth moving down to certain secion of the page */
+
+  const scroll1 = document.getElementById('scrollSouthend');
+
+  scroll1.addEventListener('click', () => window.scrollTo({
+    top: 870,
+    behavior: 'smooth',
+  }));
+ 
+  const scroll2 = document.getElementById('scrollHNMC');  
+ 
+  scroll2.addEventListener('click', () => window.scrollTo({
+    top: 1620,
+    behavior: 'smooth',
+  }));
+ 
+  const scroll3 = document.getElementById('scrollBoughton');
+ 
+  scroll3.addEventListener('click', () => window.scrollTo({
+    top: 2430,
+    behavior: 'smooth',
+  }));
 
 
 
@@ -48,28 +70,6 @@ function myFunction() {
   }
 
 
-  /* functions for the smooth moving down to certain secion of the page */
-
-  const scroll1 = document.getElementById('scrollSouthend');
-
-  scroll1.addEventListener('click', () => window.scrollTo({
-    top: 830,
-    behavior: 'smooth',
-  }));
-
-  const scroll2 = document.getElementById('scrollHNMC');  
-
-  scroll2.addEventListener('click', () => window.scrollTo({
-    top: 1610,
-    behavior: 'smooth',
-  }));
-
-  const scroll3 = document.getElementById('scrollBoughton');
-
-  scroll3.addEventListener('click', () => window.scrollTo({
-    top: 2430,
-    behavior: 'smooth',
-  }));
 
 
 
