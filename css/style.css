@@ -73,15 +73,15 @@ body{
 
 /* css for loading the landing page progressivly */
 #background{
-background-color: ;
-/*background-image: url(../images/racingedit.png);
-background-position: center;
-background-size: cover;
-position: absolute;
-top:0px;
-left:0px;
-width: 100%;
-height: 100%;*/
+background-image: url(../images/purple-edit.png);
+background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top:0px;
+  left:0px;
+  width: 100%;
+  height: 130%;
 }
 
 
@@ -119,7 +119,7 @@ height: 100%;*/
     font-size: 100px;
     line-height: 120px;
     letter-spacing: 0px;
-    color: #0300AD;
+    color: whitesmoke;
 }
 
 #landing-national{
@@ -127,7 +127,7 @@ height: 100%;*/
   font-size: 60px;
   line-height: 70px;
   letter-spacing: 0px;
-  color: #0300AD ;
+  color: whitesmoke ;
 }
 
 
@@ -156,35 +156,48 @@ height: 100%;*/
     font-size: 20px;
     letter-spacing: 0px;
     line-height: 26px;
-    color: #0300AD;
+    color: #8dB800;
 }
 /* Regional page css */
 
 #southend{
-  background-image: url(../images/sounthend.png);
-  background-position: center;
+  background-image: url(../images/purple-repeat.png);
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 270%;
 }
 
 #track-bullet-points{
   font-family: 'Libre Baskerville';
   font-size: 16px;
   letter-spacing: 0px;
-  color: #0300AD;
+  color: #7BB800;
 }
 
 #event-list{
   cursor: grabbing;
+  color: whitesmoke;
 }
 
 #HNMC{
-  background-image: url(../images/HNMC.png);
-  background-position: center;
+  /*background-image: url(../images/purple2.png);
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;*/
 }
 
 #Boughton{
-  background-color: red;
+  /*background-image: url(../images/purple3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;*/
 }
 
 
