@@ -1,6 +1,6 @@
 /*These are the variables that assign where the funtion is working in the page by using the query selctor */
 const textColor = document.querySelectorAll('#scroll-screen-1')
-const listColor = document.querySelectorAll('#example-list li')
+const listColor = document.querySelectorAll('#location-list li')
 
 
 
@@ -14,6 +14,20 @@ function myFunction() {
     document.getElementById("loading").style.display = "block";
   }
 
+/* The javascript powering the change of the fonts in the event list on the regional series page */
+  for (list of listColor){
+    list.addEventListener('click', function(){
+      this.classList.toggle('list-change');
+    });
+  }
+
+
+
+
+
+
+
+
 /* This is the for loop that is changing the plain text in to larger yellow writing with the click property*/
   for (text of textColor){
     text.addEventListener("click", function() {
@@ -22,13 +36,7 @@ function myFunction() {
     });
   }
 
-  /* The for loop that lopps through the list items and adds the css properties when clicked on,
-  and then returns the list item to default with a second click*/
-  for (list of listColor){
-    list.addEventListener('click', function(){
-      this.classList.toggle('list-change');
-    });
-  }
+
 
   /* The on and off funtions for the overlay affect being swtiched on and off again*/
   function on() {
@@ -45,11 +53,11 @@ function myFunction() {
   const scroll1 = document.getElementById('scrollSouthend');
 
   scroll1.addEventListener('click', () => window.scrollTo({
-    top: 810,
+    top: 830,
     behavior: 'smooth',
   }));
 
-  const scroll2 = document.getElementById('scrollHNMC');
+  const scroll2 = document.getElementById('scrollHNMC');  
 
   scroll2.addEventListener('click', () => window.scrollTo({
     top: 1610,
@@ -59,7 +67,7 @@ function myFunction() {
   const scroll3 = document.getElementById('scrollBoughton');
 
   scroll3.addEventListener('click', () => window.scrollTo({
-    top: 2386,
+    top: 2430,
     behavior: 'smooth',
   }));
 

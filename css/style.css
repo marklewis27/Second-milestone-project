@@ -1,6 +1,8 @@
+/* Settings for the background of the loading page */
 body{
     background-color:#f2f2f2;
 }
+
  /* The css properties for the loading icon when the page is first opened up */
 #loader {
     position: absolute;
@@ -54,9 +56,6 @@ body{
     display: none;
     text-align: center;
   }
-
-
-
   
   /* css for the button on the loading page, margin to get it to allign with the loading icon*/
 #enter-button{
@@ -65,16 +64,22 @@ body{
     font-size: 20px;
 }
 
+/* Properties for the welcome button to fade in when the hover critea is met */
 #enter-button:hover{
     background-color: #cccccc;
     transition-duration: 1s;
 }
+/* End of css for the loading page that first appears on the screen */
 
 
-/* css for loading the landing page progressivly */
-#background{
-background-image: url(../images/purple-edit.png);
-background-repeat: no-repeat;
+
+
+
+
+/* Background images properties used on the landing page and also the top of the regional series page */
+#background-main{
+  background-image: url(../images/purple-edit.png);
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   position: absolute;
@@ -84,83 +89,21 @@ background-repeat: no-repeat;
   height: 130%;
 }
 
-
+/* Animation to give the fade in affect when the page is loaded */
 #progressive-loading{
   animation-name: load;
   animation-duration: 5000ms;
   animation-fill-mode: forwards;
 }
 
+/* Setting of the opacity for the above animation for the page loading */
   @keyframes load{
     from { opacity: 0 }
       to { opacity: 1 }
 }
 
-
-
-/* margin removed to allign the nav elliments correctly on the landing page*/
-#intro-container{
-    margin: 0px;
-}
-
-
-/* navbar */
-
-#navbar{
-    margin-left: 30px;
-    margin-top: 15px;
-}
-
-
-/* Style for the landing page content when the page loads */
-#landing-main{
-    font-family: 'Nixie One';
-    margin-top: 30px;
-    font-size: 100px;
-    line-height: 120px;
-    letter-spacing: 0px;
-    color: whitesmoke;
-}
-
-#landing-national{
-  font-family: 'Nixie One';
-  font-size: 60px;
-  line-height: 70px;
-  letter-spacing: 0px;
-  color: whitesmoke ;
-}
-
-
-#explain{
-  font-family: 'Libre Baskerville';
-  font-size: 30px;
-  letter-spacing: 0px;
-  line-height: 40px;
-  margin-bottom: 100px;
-  margin-top: 100px;
-  color: #0300AD;
-}
-
-#explain-2{
-  font-family: 'Libre Baskerville';
-  font-size: 28px;
-  letter-spacing: 0px;
-  line-height: 36px;
-  padding-bottom: 60px;
-  color: #0300AD;
-}
-
-
-#track-description{
-    font-family: 'Libre Baskerville';
-    font-size: 20px;
-    letter-spacing: 0px;
-    line-height: 26px;
-    color: #8dB800;
-}
-/* Regional page css */
-
-#southend{
+/* Properties for the background image that runs behind all of the track info sections */
+#track-background{
   background-image: url(../images/purple-repeat.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -170,6 +113,89 @@ background-repeat: no-repeat;
   height: 270%;
 }
 
+/* margin removed to allign the nav elliments correctly on the landing page*/
+#main-nav{
+    margin: 0px;
+}
+
+/* Navbar button properties to move the buttons in to the page more */
+#nav-buttons{
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+/* hover class for the brca in large at the top, this is to indicate that this is 
+   a link to the main brca page for this class of racing */
+#brca:hover{
+  font-weight: bold;
+  cursor: grabbing;
+}   
+
+/* Properties for the main BRCA heading text on the landing and regional page */
+#regional-heading{
+    font-family: 'Nixie One';
+    margin-top: 30px;
+    font-size: 100px;
+    line-height: 120px;
+    letter-spacing: 0px;
+    color: whitesmoke;
+}
+
+/* Text at the top of the page informing people that weather and map information is avalible */
+#weather-info{
+  font-family: 'Nixie One';
+  color: whitesmoke;
+  font-size: 20px;
+}
+
+/* Properties for the location names of each venue */
+#EOE-titles{
+  font-family: 'Nixie One';
+  font-size: 60px;
+  line-height: 70px;
+  letter-spacing: 0px;
+  color: whitesmoke ;
+}
+
+/* hover class for the location list to signal that they can be clicked on to 
+   the user of the website */
+li:hover{
+  font-style: italic;
+  font-weight: bolder;
+}
+
+/* List of venues at the top of the regional page, default values.
+   These will be overwritten when clicked on using the javascript 
+   function on them */
+#location-list{
+  font-family: 'Libre Baskerville';
+  font-size: 30px;
+  letter-spacing: 0px;
+  line-height: 40px;
+  margin-bottom: 80px;
+  color: whitesmoke;
+  cursor: grabbing;
+}
+
+/* javascript styles that come in with the use of the click function,
+  These are the new properties that are applied with the onclick to 
+  overwrite the ones above. otherwise remain unused */
+.list-change{
+  color: grey;
+  font-size: 30px;
+  font-style: italic;
+}
+
+/* Section of text giving the description about the track venue */
+#track-description{
+    font-family: 'Libre Baskerville';
+    font-size: 20px;
+    letter-spacing: 0px;
+    line-height: 26px;
+    color: #8dB800;
+}
+
+/* Layout properties for the bullet point info for each of the tracks */
 #track-bullet-points{
   font-family: 'Libre Baskerville';
   font-size: 16px;
@@ -177,28 +203,7 @@ background-repeat: no-repeat;
   color: #7BB800;
 }
 
-#event-list{
-  cursor: grabbing;
-  color: whitesmoke;
-}
 
-#HNMC{
-  /*background-image: url(../images/purple2.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  height: 100%;*/
-}
-
-#Boughton{
-  /*background-image: url(../images/purple3.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  height: 100%;*/
-}
 
 
 
@@ -240,14 +245,6 @@ background-repeat: no-repeat;
 
 
 
-/* javascript styles that come in with the use of the click function, otherwise remain unused */
-
-.list-change{
-  color: yellow;
-  font-size: 18px;
-  font-style: italic;
-}
-
 /* properties for the overlay that comes up with the click of the button*/
 #overlay {
   position: fixed;
@@ -279,8 +276,10 @@ background-repeat: no-repeat;
   -ms-transform: translate(-50%,-50%);
 }
 
-/* Styles for the second page scrolled down with the javascript examples on it */
 
+
+
+/* Styles for the second page scrolled down with the javascript examples on it */
 #second-display{
   height: 381px;
   background-color: lightgreen;
@@ -290,6 +289,7 @@ background-repeat: no-repeat;
 #displayed-message{
   padding-top: 10px;
 }
+
 
 
 
@@ -310,19 +310,4 @@ background-repeat: no-repeat;
   75%  {background-color: pink}
   100% {background-color: red;}
 }
-
-
-#trial-1{
-  background-color: lightblue;
-  height: 381px;
-}
-
-
-#trial-2{
-  background-color: lightyellow;
-  height: 381px;
-}
-
-
-/* styles in the contact page with the email submission form */
 
