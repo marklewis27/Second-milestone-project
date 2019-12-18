@@ -124,12 +124,6 @@ body{
     margin-top: 15px;
 }
 
-/* hover class for the brca in large at the top, this is to indicate that this is 
-   a link to the main brca page for this class of racing */
-#brca:hover{
-  font-weight: bold;
-  cursor: grabbing;
-}   
 
 /* Properties for the main BRCA heading text on the landing and regional page */
 #regional-heading{
