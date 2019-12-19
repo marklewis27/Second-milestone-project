@@ -48,7 +48,8 @@ function myFunction() {
 
 
 
-
+                        /*    CURRENTLY NOT ACTIVE IN THE WEBSITE.
+                              ONLY APPLY TO HTML IN THE JAVASPARE FILE  */
 
 /* This is the for loop that is changing the plain text in to larger yellow writing with the click property*/
   for (text of textColor){
