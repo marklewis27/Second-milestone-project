@@ -1,100 +1,37 @@
 # Second-milestone-project
 Second milestone project
 
-Project introwduction.
+Project introduction.
 
-This project i have tried to create a website that is smooth to use, has a professional look and feel to it with some interactive parts
-that a potential client would look at and like and want in there own webpage.
-I have made a few things on the page that are interactive and require users input to make them come alive, in todays web world interactivity 
-on a page is key. To highlight this to potential clients wanting a website building it gives a few insigihts and ideas on what they could 
-have on there own page.
+The thought behind this project originally was to build a demonstration website showcasing some of the powers of Javascript but i felt that idea lacked a strong theme and i was struggling to make it look as professional as i would have like it to have been.
+After some consideration i decided to make a website that gave the user information about a racing series that i am involved in with Radio Control cars. A simple yet affective site that gave the user a clear way of finding out the information you'd need to know before attending one of these events in person.
+The design of this site i wanted to be as clean as possible, i didn't want to much going on in the background which is why i have designed the site using a simple background. To match the colors in the background of the purple that is in it i used the adobe color matcher online to find the green color as a good color that matched the purple featured. To go with this i also used a button class from bootstrap that had the green around it to tie it in nicely with the rest of the sites theme.
+The colors for the heading and the main text i went  for the white smoke color to make the most important eye catching text really stand out but without being a brilliant white color that might have given a bit to much of a glare to it.
+A user that would come on to this site would want to know about the location of the site, the sort of facilities on the site so that they know what they need to bring or not bring themselves. Another important thing to know befroe one of these events is the weather, this can have a huge impact on car setup and tyre choice so a link to the weather for the are that the event is being held is extremely useful to a racer.
 
-UX.
 
 Features.
 
-There are a few features that are automatic on the page, from the loading animation to the simple css fading of the welcome button when
-hovered over. The smooth loading of the page rather than the sudden flash of the page there to give it all a smoother and more professional
-feel about it.
-As for the interactive features that are on the site..
+Feature 1. Loading page, by using a combination of css and javascript i gave the page the loading icon to give it a professional loading              theme to enter the site with.
+Feature 2. Both of the welcome and regional series pages have smooth loading, rather than the sudden appearance of the site having it blend            on to the screen give the site that softer more user friendly feel.
+Feature 3. The welcome page has a button at the bottom with a link to the BRCA website for all the rules and regulations for this class of            racing which a lot of people find helpful to check on from time to time.
+Feature 4. In the regional series page the list of venues at the top can be clicked on and the page will smoothly scroll to that venue                information section.
+Feature 5. The list of venues also chenge there css proprties when clicked on to remind the user which ones they have clicked on already.
+Feature 6. As mentioned before there is a link to the weather forecast for each venue on the site.
+Feature 7. Each venure has a list of important information that when hovered over change to italic to catch the users attention is there              mouse hovers over them.
 
-Feature 1.
-When clicking on the text the css properties change permanetly for the user, this is a feature that would be helpful when wanting to 
-highlight certain products so to make it clear what has been clicked on. This uses a custom css class and a javaxsctiprt function to run it.
+Features left to implement.
 
-Feature 2.
-In a way similar to the first item, a click on the list items will highlight what has been clicked on. However different to the first feature
-this one is using the loop meathod in javascript to only apply the css to the clicked on text and does'nt apply the new css styles to the whole
-list. I have also used the toggle option in the javascript so that with a second click on the same list item will return it to the original
-properties it had when the page loaded.
-
-Feature 3.
-The full screen overlay with text in its centre. This uses a fair bit of css to create the affect and also add the text on. It lke the 
-previous features makes use of the eventlisteners in javascript and waits for the click of the button before the function then applys
-the css styles that result in the overlay on the screen. This would be a really good feature to use to highlight an additional offer on
-a item or draw attention to another section of the site. It can also be implemented to load automaticlly when the page loads but for this
-site i wanted the interaction of being able to turn it on and off with the users click of the mouse.
-
-Feature 4.
-The number checker, this feature i wanted to make that bit more interactive with the user by them needing to type in an input to get 
-something back from the site. i used the if else statments with the parameters of what numbers would return what message for this one.
-At the start of the javascript code i have included a NAN if statments so that if anything other than a number is entered it will
-display that entry with a space and then a message to indicate that whats been entered is not quiet right.
-
-Features left to do.
+Although i do have a map on the page with a close up of the venue i would have liked to make it more interactive with a google maps API however when i looked in to signing up for this the secuirty around the usage of the API seemed a little unclear so i wasn't happy to have something that seemed fairly unguarded link to my debit card details which is why that was not included in this project.
 
 
-Technologies Used.
+Technologys used.
 
-https://getbootstrap.com/
-The framework of this site was built around the bootstrap grid system, using it to gain the layout of the page and some of its
-deflaut styles. 
+The site has been built using the bootstrap framework which can be found here ... https://getbootstrap.com/ I used this for the grid system to get the layout i have and also the defualt classes for things such as buttons and the navigation on the site.
 
+The site has Javascript in it to make some of the animations work and some of the features on the site to work based on the user input to give it more interactivity.. https://www.javascript.com/
 
-Testing.
+As part of the design process i used the adobe color wheel that matches colors that work well together to help with the design of the colors on the site ... https://color.adobe.com/create
 
-During the build of this site i have taken a few screenshots of testing that has taken pace which i will include in a testing file 
-so that the images are avalible to view.
-
-While i've been bulding this site i have been using visual studio code as my prefered software, one of the first things that i added
-to this programme was the live server plugin so as i was making changes to the site and saving them the changes would appear on the 
-screen straight away. i found this useful and helped speed up the build.
-
-When building the firs page that has the loading icon in the center of the screen i noticed that the button that would follow was not
-in the centre of the screen where the loading icon was. I changed the css properties of the button and the posistion it was in 
-until i got the properities right and the button would render on the correct part of the page to look professional and alligned.
-
-Moving in to the landing page on the site useing the grid system allowed me to lay the page out without to may problems, i was 
-finding that i would have a small area of white on the right hand side of the page, that even when i used the built in google 
-chrome Dev tools it wasn't clear what caused this. I tried removing marging and padding on the right hand side of the page but
-it still persisted. I then used the containter fluid class on the page and that solved the problem by filling 100% width of the page.
-
-Once the gird was in place i moved in to the interactive part of the site, First up i created a small pieces of javascript that
-contained some new css propeties so that when the text was clicked on these would the be put in place as the new css properties. 
-At first my javascript wasn't applying these new styles but that was due to a simple syntax error i made.
-
-Next was the list that i made that could be interacted with andbchanged color with the click of a button i test first off in
-the console to make sure the for loop was working, when i click on each list item it would appear one at a time in the console 
-in a node list. once this was in the place i added the new css properties in to the css file that the javascript would get
-and apply to only that one item when clicked on in the list. I have put in the toggle option on this one so that with a second click
-the syles would revert back to the origninal ones.
-
-After this is set about the overlay with the message on. I again set up the css properties for this that i needed and the javascipt 
-functions to turn it on and off when the user clicks. I am having some trouble with this not rendering right on the screen, it 
-seems that some of the code after this feature is still visable rather than being behind the overlay like the code that has gone before
-it. I believe this is a loading order issue that i am still trying to get the to bottom of.
-
-Then comes the number chekcer on the page. i wanted to come away from the loops and click events i had done before. I used IF statments
-for this one, to start with i wrote the if statements and console logged the results. To being with i was entering in the number in the 
-code and console logging it only to find it was priting the number to the console not the message. I found the solution to this 
-and knew that the statement was working so then i moved on to getting it to render to the screen. I had a problem of the the entry of 
-a number and clicking the button not returning anything to the screen, i soon worked out that this was down to a wrong assingment of 
-where the message result was going. Once that was worked out i had a wokring feature that the user could interect with an input and 
-get a message back from the browser.
-
-
-Deployment.
-
-Credits.
 
 
