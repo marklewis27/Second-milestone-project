@@ -26,7 +26,7 @@ function myFunction() {
   const scroll1 = document.getElementById('scrollSouthend');
 
   scroll1.addEventListener('click', () => window.scrollTo({
-    top: 870,
+    top: 850,
     behavior: 'smooth',
   }));
  
@@ -61,6 +61,7 @@ function myFunction() {
 
 
   /* The on and off funtions for the overlay affect being swtiched on and off again*/
+  /* This overlay feature was found on the W3 website, i then changed some of the css to my own liking */
   function on() {
     document.querySelector("#overlay").style.display = "block";
   }

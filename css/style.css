@@ -86,8 +86,7 @@ body{
   left:0px;
   position: absolute;
   width: 100%;
-  height: 100%;
-  overflow-x: hidden;
+  height: 200%;
 }
 
 /* Animation to give the fade in affect when the page is loaded */
@@ -111,7 +110,8 @@ body{
   background-size: cover;
   position: absolute;
   width: 100%;
-  height: 340%;
+  height: 220%;
+  
 }
 
 /* margin removed to allign the nav elliments correctly on the landing page*/
@@ -134,6 +134,11 @@ body{
     line-height: 120px;
     letter-spacing: 0px;
     color: whitesmoke;
+}
+
+
+#map-image{
+  color: white;
 }
 
 /* Text at the top of the page informing people that weather and map information is avalible */
@@ -287,22 +292,4 @@ li:hover{
 
 
 
-
-
-/* background animation in the lower div, testing for adam */
-
-#background-animation{
-  height: 762px;
-  animation-name: adam;
-  animation-iteration-count: infinite;
-  animation-duration: 15s;
-} 
-
-@keyframes adam {
-  0%   {background-color: red;}
-  10%  {background-color: yellow;}
-  20%  {background-color: orange}
-  75%  {background-color: pink}
-  100% {background-color: red;}
-}
 
