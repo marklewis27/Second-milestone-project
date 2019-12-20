@@ -60,7 +60,6 @@ function myFunction() {
   }
 
 
-
   /* The on and off funtions for the overlay affect being swtiched on and off again*/
   function on() {
     document.querySelector("#overlay").style.display = "block";
@@ -69,23 +68,6 @@ function myFunction() {
   function off() {
     document.querySelector("#overlay").style.display = "none";
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
   /* This is the function that uses an if else statment based on the users input of a number value to 
