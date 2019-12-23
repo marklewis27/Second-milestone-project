@@ -32,12 +32,12 @@ Feature 6. As mentioned before there is a link to the weather forecast for each 
 
 Feature 7. Each venure has a list of important information that when hovered over change to italic to catch the users attention is there            mouse hovers over them.
 
+Feature 8. Each venue has a small map preview that when hovered over zooms in slightly to show it is clickable, When clicked takes you              to the google maps for that track.
 
 
 Features left to implement.
 
-
-Although i do have a map on the page with a close up of the venue i would have liked to make it more interactive with a google maps API however when i looked in to signing up for this the secuirty around the usage of the API seemed a little unclear so i wasn't happy to have something that seemed fairly unguarded link to my debit card details which is why that was not included in this project.
+I was going to use a google API for the maps to add even more interactivity in to the website but i didnt feel comofortable doing so as it needed details for payment. That therefore meant that my card could be charged if someone were to view my page on github and use the maps on my site. I have made the maps as interactive as i can by giving them some css changes to make them zoom in and then linked them to the full google maps page for the relevent track location.
 
 For the original project idea of a demonstration page i made a few features that are still in the code but not on the site, i have chosen to leave them in the code for you to view to demonstrate some further understanding of the javascript language.
 
@@ -51,6 +51,8 @@ The site has been built using the bootstrap framework which can be found here ..
 The site has Javascript in it to make some of the animations work and some of the features on the site to work based on the user input to give it more interactivity.. https://www.javascript.com/
 
 As part of the design process i used the adobe color wheel that matches colors that work well together to help with the design of the colors on the site ... https://color.adobe.com/create
+
+The maps have of course come from the source of google maps, although not via an API as i explained earlier. https://www.google.com/maps/@53.800651,-4.064941,6z
 
 Testing.
 
@@ -67,8 +69,9 @@ Javascript scroll feature. i wanted the menu at the top to be clickable in a way
 
 Changing the font style of the location list. This function i wrote but it didnt seem to work at first, with some research i realised that i hadnt assigned it to a variable that would make it run when the user clicked on the list item. And that i also hadnt set the new css properties for the site to know what it should look like after the user has clicked on the list item on the site.
 
-Mobile view. As you will be able to see in some of my pictures i had trouble with the white space on the right hand side of the screen and i could'nt work out why this was. I had to take to the web to find the answer and it seemed the answer was adding in the overflow-x hidden attribute in the css file did the trick. 
-I tried changing properties in the bootstrap and css margin and padding before this but although some adjustments made it better none of them fixed the problem completly.
+Mobile view. As you will be able to see in some of my pictures i had trouble with the white space on the right hand side of the screen and i could'nt work out why this was. After checking my work i found that i had mixed up some of my classes for the containers and rows which was causing this problem.
+Once i had got the white space sorted out i was pretty happy with the view on mobile, However when i added in my first image for the maps it was to large of scale in the mobile view and went beyond the width i wanted it to. A simple change to the width property in the css classes soon made sure that it rendered nicely on the mobile view as it did on the desktop view.
+
 
 
 A couple of things i made and tested but arent in the final website are the block of text that when clicked changes color and stays at the new properties set in the css that are activated by the javascript, when making this i tested to make sure it worked however it was conflicting with the list that changed back to the original style with a second click. It turned out to be a naming issue with the javascript that  was able to rectify quickly.
