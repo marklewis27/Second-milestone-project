@@ -79,3 +79,24 @@ A couple of things i made and tested but arent in the final website are the bloc
 The number entering box. This feature set up a text box that the user could enter in a number and then a message would be returned to screen based on the number that was entered using a set of if statments in the java script. i first made the javascript and tested it in the console, however to start with it was printing the javascript as well as the number in the console. this turned out to be a naming issue of the console log. once this was sorted the message that should be returned was printing to the console like it should. After this was sorted i then set up the ability to have the user input the number and return the message to the screen. First tests it was returning the number to the screen not the message as i'd got the names the wrong way around in the function again, once id changed those over it was working as it should be.
 
 
+Deployment.
+
+Despite my best efforts i was unable to get the site to deploy on github pages, after follwoing there online instructions and watching several videos along side a lot of googling the answer it still didn't want to work for me. Frustrating but i have always found github to be a very un-user friendly programme.
+
+I was going to deploy the site under the web address of www.brca.EOE.info.com had i been able to get that to work and have a deployed version on show.
+
+credits.
+
+I have mentioned in the comments in the code any pieces of code that i have sourced from external sites in my project.
+
+
+Media.
+
+The photos for the background were from a google search for purple background images. 
+
+The screen shots for the maps were from google maps
+
+
+Acknowledgements.
+
+The inspiration for this site came from the need for a one stop place for information for this racing series. The design elliment and the color scheme's were inspired by some searching on pintrest.
