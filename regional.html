@@ -19,9 +19,15 @@
 
     <title>Second Milestone project loading page</title>
 </head>
+
+<!-- id tag for the body class that is assigned to the javascript for the smooth loading transistion -->
 <body id="progressive-loading"> 
     
+    <!-- Background div for the page that first loads on the regional page. 
+        This stops as the one for the tracks starts. -->
     <div id="background-main">
+
+        <!-- Top div for the regional page that is the view on screen when the page loads -->
         <div class="container" id="main-nav">
             <div class="row">
                 <div class="col-sm-1" id="nav-buttons">
@@ -48,6 +54,8 @@
             </div>
         </div>
 
+
+        <!-- List at the top of the regional page that have the scroll javascript associated to them -->
         <div class="container" id="location-list">
             <div class="row">
                 <div class="col-sm-8 offset-2">
@@ -63,8 +71,10 @@
         </div>
     </div>    
     
-
+    <!-- Background div to give the whole site a background image that flows from top to bottom -->
     <div id="track-background">
+
+        <!-- Container for all of the details on the Southend club section of the page -->
         <div class="container">
             <div class="row">
                 <div class="col-sm-7 offset-3">
@@ -96,17 +106,21 @@
                     <br>
                     <p id="track-description">Please find the map on the right to find your way to the track</p>
                 </div>
+
+                <!-- Section of the page with the links to the weather and the maps for the site -->
                 <div class="col-sm-5 offset-2">
                     <br><br><br>
                     <button type="button" class="btn btn-outline-info"><a href="https://www.bbc.co.uk/weather/6296601"  target="_blank">Check the Weather Forecast Here</a></button>
-                    <br><br><br>
-                    <p id="map-image">sdjfnfbdfndsjf</p>
+                    <br><br><br><br>
+                    <a href="https://www.google.co.uk/maps/place/Southend+RCCC/@51.5657322,0.6754799,16.77z/data=!4m5!3m4!1s0x47d8d9700210b931:0x151fe09d9a842613!8m2!3d51.5655999!4d0.6749256" target="_blank">
+                    <img id="map-southend" src="images/southendmap.PNG" alt="">
+                    </a>
                 </div>
             </div>
         </div>
          
 
-    
+    <!-- Container for all of the details on the HNMC club section of the page -->
         <div class="container">
             <div class="row">
                 <div class="col-sm-7 offset-3">
@@ -139,15 +153,21 @@
                         <p id="track-description">Please find the map on the right to find your way to the track</p>
                         <br><br><br>
                 </div>
+
+                <!-- Section of the page with the links to the weather and the maps for the site -->
                 <div class="col-sm-5 offset-2">
                     <br><br><br>
                     <button type="button" class="btn btn-outline-info"><a href="https://www.bbc.co.uk/weather/2634777"  target="_blank">Check the Weather Forecast Here</a></button>
-                </div>
+                    <br><br><br><br>
+                    <a href="https://www.google.co.uk/maps/place/Herts+RC+Models+LTD/@51.8251989,-0.0551025,16.81z/data=!4m5!3m4!1s0x4876264f4876bff7:0x1c31e198a80cb6c!8m2!3d51.8253974!4d-0.0574415" target="_blank">
+                    <img id="map-hnmc" src="images/hnmc.PNG" alt="">
+                    </a>
+                </div> 
             </div>  
         </div>    
     
 
-    
+        <!-- Container for all of the details on the Boughton club section of the page -->
         <div class="container">
             <div class="row">
                 <div class="col-sm-7 offset-3">
@@ -183,16 +203,22 @@
                         <p id="track-description">Please find the map on the right to find your way to the track</p>
                         <br><br>
                 </div>
+
+                <!-- Section of the page with the links to the weather and the maps for the site -->
                 <div class="col-sm-5 offset-2">
                     <br><br><br>
                     <button type="button" class="btn btn-outline-info"><a href="https://www.bbc.co.uk/weather/2634522"  target="_blank">Check the Weather Forecast Here</a></button>
+                    <br><br><br><br>
+                    <a href="https://www.google.co.uk/maps/@52.5847992,0.5147076,528m/data=!3m1!1e3" target="_blank">
+                    <img id="map-boughton" src="images/boughtonmap.PNG" alt="">
+                    </a>
                 </div>
             </div>  
         </div>    
     </div>
 
 
-    <!-- Site footer with links to social media sites -->
+    <!-- Link to javascript file -->
 
     <script src="main.js"></script>
 

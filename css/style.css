@@ -136,9 +136,43 @@ body{
     color: whitesmoke;
 }
 
+/* Map image size and transistion for the zooming when hover is in affect */
+#map-southend{
+  width: 100%;
+  transition: 1s ease-in-out;
+}
 
-#map-image{
-  color: white;
+/* Properties to make the map zoom in to a slightly larger scale when hovered over */
+#map-southend:hover{
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* Map for hnmc */
+#map-hnmc{
+  width: 85%;
+  height: 50%;
+  transition: 1s ease-in-out;
+}
+
+#map-hnmc:hover{
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
+/* Map for boughton */
+#map-boughton{
+  width: 85%;
+  transition: 1s ease-in-out;
+}
+
+#map-boughton:hover{
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 /* Text at the top of the page informing people that weather and map information is avalible */
@@ -210,6 +244,8 @@ li:hover{
 
 
 
+
+/*  NOT IN USE ON THE ACTUAL VIEWABLE PAGE.  */
 
 
 #scroll-screen-main{
